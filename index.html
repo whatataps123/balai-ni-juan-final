@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="src/assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="src/styles/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="src/styles/css/styles.css">
+
+        <title>Balai ni Juan</title>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script type="module" src="src/js/form.js"></script>
+        <script type="module" src="src/js/auth.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Balai ni Juan</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">Services</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="src/assets/img/home1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__data-title">Welcome to <br><b>Balai ni Juan</b><br></h1>
+                        <a href="#about" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#contact" class="home__social-link">
+                            <i class="ri-phone-fill"></i>
+                        </a>
+                        <a href="#appointment" class="home__social-link">
+                            <i class="ri-mail-fill"></i>
+                        </a>                        
+                        <a href="https://www.facebook.com/balainijuan" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/explore/locations/271531881/balai-ni-juan/?hl=en" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">Check our services</span>
+                            <a href="#experience" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="src/assets/img/event1.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">About Balai ni Juan</h2>
+                        <p class="about__description">A quite, romantic private venue and close-to-nature events place. It is a perfect venue for your memorable moments. A pavilion is sheltered by tall and fruit-bearing trees which give a unique charm and refreshing ambiance. It has a koi pond stairway leading to the entrance of the pavilion.
+                        </p>
+                        <p class="about__description">Ideal for birthdays, garden wedding, debuts christening, anniversaries, reunions, and other special events and occassions.</p>
+                        <a href="#auth-section" class="button">Book Now</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="src/assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="src/assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">We Create, You Celebrate.</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="src/assets/img/discover1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Enchanting</h2>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="src/assets/img/discover2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Unforgettable</h2>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Timeless</h2>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="src/assets/img/discover4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Intimate</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="experience section" id="experience">
+                <h2 class="section__title">Services We Offer</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">Venue & Event Essentials</h2>
+                            <span class="experience__description">Venue, Lights and Sounds with DJ <br> Rooms, Pictorial Venue <br> Wedding or Event Coordinators  <br> Wedding Package</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">Styling & Memories</h2>
+                            <span class="experience__description">Hair and Make-Up Artist <br> Gowns and Accessories <br>Photo & Video with Album, Photobooth</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">Food, Entertainment & Decor</h2>
+                            <span class="experience__description">Catering Services <br> Host, Singers, Clowns, Magicians <br> Florist</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="src/assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="src/assets/img/experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Take a glimpse of Balai ni Juan’s serene and romantic atmosphere through our video tour — the perfect venue for your most cherished celebrations.
+                    </p>
+
+                    <div class="video__content" style="display: flex; justify-content: center;">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3744725882513358%2F&show_text=false&width=267&t=0" 
+                            width="267" 
+                            height="476" 
+                            style="border:none;overflow:hidden" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== RECOMMENDATIONS ====================-->
+            <section class="place section" id="place">
+            <h2 class="section__title">Real Stories, Unforgettable Moments</h2>
+
+            <div class="place__container container">
+                <div class="recommendation__grid">
+                <!-- Recommendation 1 -->
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fenreen%2Fposts%2Fpfbid02FNkaX3NrsuXbpLv6Uefr8EjH29zyDwb9HbBA3q8FLHCBFchFXgYYjM7YoLxUap4xl&show_text=true&width=500"
+                    width="100%" height="207"
+                    style="border:none;overflow:hidden"
+                    scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+
+                <!-- Recommendation 2 -->
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkristinemae.belleza%2Fposts%2Fpfbid02p2ZgJGbZtsWsNDeoWK5WbvP3bR7mWZvSTPXTFW2JUuZ9P4FWbVBbs244Q3Bw1a6sl&show_text=true&width=500"
+                    width="100%" height="759"
+                    style="border:none;overflow:hidden"
+                    scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+
+                <!-- Recommendation 3 -->
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faelnyrhtak%2Fposts%2Fpfbid0etExJa9F1PTFHUCgfa2oDn5vNeNieUGCHfJf9pzeX161PpS8tj7v7JQNZv7jJZjZl&show_text=true&width=500"
+                    width="100%" height="779"
+                    style="border:none;overflow:hidden"
+                    scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+                </div>
+            </div>
+            </section>
+
+<section class="appointment section" id="auth-section">
+  <div class="appointment__bg">
+    <div class="appointment__container container">
+      <h2 class="appointment__title">Booking an Appointment Access</h2>
+      <p class="appointment__description">
+        Log in or register to book an appointment.
+      </p>
+
+      <!-- Login Form -->
+      <form id="login-form" class="appointment__form">
+        <h2 style="text-align: center;">Login</h2>
+        <input
+          type="email"
+          id="login-email"
+          placeholder="Email"
+          class="appointment__input"
+          required
+        />
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          class="appointment__input"
+          required
+        />
+        <button type="submit" class="button">Login</button>
+        <p style="text-align: center; margin-top: 1rem;">
+          Don’t have an account?
+          <a href="#auth-section" id="toggle-to-register">Register here</a>
+        </p>
+      </form>
+
+      <!-- Register Form -->
+      <form
+        id="register-form"
+        class="appointment__form"
+        style="display: none;"
+      >
+        <h2 style="text-align: center;">Register</h2>
+        <input
+          type="email"
+          id="register-email"
+          placeholder="Email"
+          class="appointment__input"
+          required
+        />
+        <input
+          type="password"
+          id="register-password"
+          placeholder="Password"
+          class="appointment__input"
+          required
+        />
+        <button type="submit" class="button">Register</button>
+        <p style="text-align: center; margin-top: 1rem;">
+          Already have an account?
+          <a href="#auth-section" id="toggle-to-login">Login here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+                <div id="toast-container" 
+                    style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">          
+                </div>
+                <section class="appointment section" id="appointment" style="display: none;">
+                <div class="appointment__bg">
+                    <div class="appointment__container container">
+                    <h2 class="appointment__title">Book an Appointment</h2>
+                    <p class="appointment__description">
+                        Fill out the form below to book an appointment. We will get back to you as soon as possible.
+                    <form id="appointment-form" class="appointment__form">
+                        <input type="text" name="name" placeholder="Your Name" class="appointment__input" required>
+                        <input type="email" name="email" placeholder="Your Email" class="appointment__input" required>
+                        <input type="text" name="subject" placeholder="Subject" class="appointment__textarea" required>
+                        <input type="hidden" name="date" id="form-date">
+                        <textarea name="message" placeholder="Your Message / Preferred Time" rows="4" class="appointment__textarea" required></textarea>
+
+                        <button type="submit" id="submit-btn" class="button">Send Request</button>
+                    </form>
+
+                <p id="form-status" class="status-message"></p>
+
+                <!-- ✅ Only ONE logout container -->
+                <div id="logout-container" style="margin-top: 1rem; display: none;">
+                    <button id="logout-btn" class="button" onclick="handleLogout()" style="background-color: var(--first-color-second);">
+                    Logout
+                    </button>
+                </div>
+
+                </div>
+            </div>
+            </section>
+
+                
+        <!--==================== CONTACT INFO ====================-->
+        <section class="contact section" id="contact">
+        <div class="contact__container container">
+            <h2 class="section__title">Contact Us</h2>
+            
+            <div class="contact__content grid">
+            <div class="contact__info">
+                <p><i class="ri-phone-fill"></i> 0905 215 1573</p>
+                <p><i class="ri-map-pin-2-fill"></i> Purok 7, Bagong Buhay I, San Jose del Monte, Philippines</p>
+            </div>
+            
+            <div class="contact__map">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9480.631038469288!2d121.05596674793861!3d14.85173216503627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a8b5b5170681%3A0xc5b0c064e75a2aa4!2sBalai%20Ni%20Juan!5e1!3m2!1sen!2sph!4v1751565600519!5m2!1sen!2sph" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Balai ni Juan</h3>
+                        <p class="footer__description">A place for all occasions with sufficient space for a medium crowd and a touch of the past.
+                        </p>
+                        <div>
+                            <a href="#contact" class="footer__social">
+                                <i class="ri-phone-fill"></i>
+                            </a>
+                            <a href="#appointment" class="footer__social">
+                                <i class="ri-mail-fill"></i>
+                            </a>  
+                            <a href="https://www.facebook.com/balainijuan" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/explore/locations/271531881/balai-ni-juan/?hl=en" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+ 
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#about" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#experience" class="footer__link">Services</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                                        
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#contact" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2025 Balai ni Juan. All rights reserved.</p>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="src/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="src/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
