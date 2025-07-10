@@ -2,6 +2,8 @@
 
 A modern web application for booking appointments and exploring the services of Balai ni Juan, a private events venue. The site features user authentication, appointment booking with email notifications, and a visually engaging presentation of venue offerings.
 
+ Access the website application here. [Balai ni Juan](https://balai-ni-juan.vercel.app)
+
 ## Features
 
 - Responsive landing page with sections for About, Discover, Services, Recommendations, and Contact.
