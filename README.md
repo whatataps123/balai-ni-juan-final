@@ -1,4 +1,5 @@
 # Balai ni Juan
+![image](https://github.com/user-attachments/assets/145d55c7-4bea-4514-a232-7d0c04ec17b2)
 
 A modern web application for booking appointments and exploring the services of Balai ni Juan, a private events venue. The site features user authentication, appointment booking with email notifications, and a visually engaging presentation of venue offerings.
 
