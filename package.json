@@ -12,7 +12,9 @@
     "vite": "^7.0.3"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.50.4",
-    "emailjs-com": "^3.2.0"
+    "@supabase/supabase-js": "^2.50.5",
+    "emailjs-com": "^3.2.0",
+    "scrollreveal": "^4.0.9",
+    "swiper": "^11.2.10"
   }
 }
